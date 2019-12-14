@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.epam.exercises'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-all
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.15'
+    // https://mvnrepository.com/artifact/org.mockito/mockito-core
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '3.2.0'
+    // https://mvnrepository.com/artifact/org.powermock/powermock-module-junit4
+    testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '1.5.1'
+    // https://mvnrepository.com/artifact/org.powermock/powermock-api-mockito
+    testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.7.4'
+
+}
