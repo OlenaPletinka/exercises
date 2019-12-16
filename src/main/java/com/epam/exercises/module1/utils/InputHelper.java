@@ -4,6 +4,8 @@ import com.epam.exercises.module1.exception.InvalidInputException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.regex.Pattern;
 
 public class InputHelper {
 
@@ -29,6 +31,31 @@ public class InputHelper {
       System.out.println(line);
 
       return line;
+   }
+
+   public static String[] getOperations(String line){
+      String[] operations = line.split("[0-9]+");
+      System.out.println(Arrays.toString(operations));
+
+      return operations;
+   }
+
+   public static int [] getNumbers(String line){
+      int[] numbers = convert(getStringsOfNumber(line));
+      System.out.println(Arrays.toString(numbers));
+
+      return numbers;
+   }
+
+   private static int[] convert(String[] numbers) {
+
+      return Arrays.stream(numbers).mapToInt(Integer::parseInt).toArray();
+   }
+
+   private  static String[] getStringsOfNumber(String line) {
+      String[] numbers = line.split("[" + Pattern.quote("+-*/") + "]");
+      System.out.println(Arrays.toString(numbers));
+      return numbers;
    }
 
    private static void validate(String line) throws InvalidInputException {

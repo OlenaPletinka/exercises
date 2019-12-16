@@ -11,7 +11,6 @@ class Calculator {
       ScriptEngineManager manager = new ScriptEngineManager();
       ScriptEngine se = manager.getEngineByName("JavaScript");
 
-
       Object result = null;
       try {
          result = se.eval(expression);
