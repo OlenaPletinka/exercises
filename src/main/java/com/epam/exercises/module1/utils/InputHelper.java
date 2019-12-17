@@ -1,5 +1,6 @@
 package com.epam.exercises.module1.utils;
 
+import com.epam.exercises.module1.exception.FormatNumberException;
 import com.epam.exercises.module1.exception.InvalidInputException;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,10 +19,9 @@ public class InputHelper {
       String line = null;
 
       try (BufferedReader bufferedReader = new BufferedReader(
-          new InputStreamReader(System.in))) { //instead of
+          new InputStreamReader(System.in))) {
 
          line = bufferedReader.readLine();
-
       } catch (IOException e) {
          e.printStackTrace();
       }
@@ -48,8 +48,11 @@ public class InputHelper {
    }
 
    private static int[] convert(String[] numbers) {
-
-      return Arrays.stream(numbers).mapToInt(Integer::parseInt).toArray();
+      try {
+         return Arrays.stream(numbers).mapToInt(Integer::parseInt).toArray();
+      } catch (NumberFormatException e){
+         throw new FormatNumberException("Please enter correct number format!");
+      }
    }
 
    private  static String[] getStringsOfNumber(String line) {
