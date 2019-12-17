@@ -1,4 +1,4 @@
-package com.epam.exercises.module1.calculator_exercise.calculator.exception;
+package com.epam.exercises.module1.calculator_exercise.exception;
 
 import java.io.IOException;
 

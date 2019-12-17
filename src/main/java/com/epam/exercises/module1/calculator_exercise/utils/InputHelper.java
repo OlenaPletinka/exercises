@@ -1,7 +1,7 @@
-package com.epam.exercises.module1.calculator_exercise.calculator.utils;
+package com.epam.exercises.module1.calculator_exercise.utils;
 
-import com.epam.exercises.module1.calculator_exercise.calculator.exception.FormatNumberException;
-import com.epam.exercises.module1.calculator_exercise.calculator.exception.InvalidInputException;
+import com.epam.exercises.module1.calculator_exercise.exception.FormatNumberException;
+import com.epam.exercises.module1.calculator_exercise.exception.InvalidInputException;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

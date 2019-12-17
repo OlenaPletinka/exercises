@@ -1,7 +1,8 @@
-package com.epam.exercises.module1.calculator_exercise.calculator;
+package com.epam.exercises.module1.calculator_exercise;
 
 import static org.junit.Assert.assertEquals;
 
+import com.epam.exercises.module1.calculator_exercise.calculator.Calculator;
 import org.junit.Test;
 
 public class CalculatorTest {
