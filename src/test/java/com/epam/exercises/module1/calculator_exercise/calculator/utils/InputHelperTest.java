@@ -1,7 +1,7 @@
-package com.epam.exercises.module1.utils;
+package com.epam.exercises.module1.calculator_exercise.calculator.utils;
 
 
-import com.epam.exercises.module1.exception.InvalidInputException;
+import com.epam.exercises.module1.calculator_exercise.calculator.exception.InvalidInputException;
 import java.io.ByteArrayInputStream;
 import org.junit.Test;
 

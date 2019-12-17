@@ -1,4 +1,4 @@
-package com.epam.exercises.module1.calculator;
+package com.epam.exercises.module1.calculator_exercise.calculator;
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;

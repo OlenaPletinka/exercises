@@ -1,4 +1,4 @@
-package com.epam.exercises.module1.calculator;
+package com.epam.exercises.module1.calculator_exercise.calculator;
 
 import static org.junit.Assert.assertEquals;
 

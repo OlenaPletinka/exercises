@@ -1,4 +1,4 @@
-package com.epam.exercises.module1.enums;
+package com.epam.exercises.module1.calculator_exercise.calculator.enums;
 
 public enum Operations {
    MULTIPLICATION("*"), DIVISION("/"), SUM("+"), SUBSTRACTION("-");

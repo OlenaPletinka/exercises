@@ -1,9 +1,9 @@
-package com.epam.exercises.module1.utils;
+package com.epam.exercises.module1.calculator_exercise.calculator.utils;
 
-import static com.epam.exercises.module1.enums.Operations.DIVISION;
-import static com.epam.exercises.module1.enums.Operations.MULTIPLICATION;
-import static com.epam.exercises.module1.enums.Operations.SUBSTRACTION;
-import static com.epam.exercises.module1.enums.Operations.SUM;
+import static com.epam.exercises.module1.calculator_exercise.calculator.enums.Operations.DIVISION;
+import static com.epam.exercises.module1.calculator_exercise.calculator.enums.Operations.MULTIPLICATION;
+import static com.epam.exercises.module1.calculator_exercise.calculator.enums.Operations.SUBSTRACTION;
+import static com.epam.exercises.module1.calculator_exercise.calculator.enums.Operations.SUM;
 
 public class MathHelper {
 

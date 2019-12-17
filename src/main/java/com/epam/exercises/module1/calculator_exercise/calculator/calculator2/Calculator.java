@@ -1,13 +1,13 @@
-package com.epam.exercises.module1.calculator2;
+package com.epam.exercises.module1.calculator_exercise.calculator.calculator2;
 
-import static com.epam.exercises.module1.utils.MathHelper.division;
-import static com.epam.exercises.module1.utils.MathHelper.isDivision;
-import static com.epam.exercises.module1.utils.MathHelper.isMultiplication;
-import static com.epam.exercises.module1.utils.MathHelper.isSubstraction;
-import static com.epam.exercises.module1.utils.MathHelper.isSum;
-import static com.epam.exercises.module1.utils.MathHelper.multiplication;
-import static com.epam.exercises.module1.utils.MathHelper.substraction;
-import static com.epam.exercises.module1.utils.MathHelper.sum;
+import static com.epam.exercises.module1.calculator_exercise.calculator.utils.MathHelper.division;
+import static com.epam.exercises.module1.calculator_exercise.calculator.utils.MathHelper.isDivision;
+import static com.epam.exercises.module1.calculator_exercise.calculator.utils.MathHelper.isMultiplication;
+import static com.epam.exercises.module1.calculator_exercise.calculator.utils.MathHelper.isSubstraction;
+import static com.epam.exercises.module1.calculator_exercise.calculator.utils.MathHelper.isSum;
+import static com.epam.exercises.module1.calculator_exercise.calculator.utils.MathHelper.multiplication;
+import static com.epam.exercises.module1.calculator_exercise.calculator.utils.MathHelper.substraction;
+import static com.epam.exercises.module1.calculator_exercise.calculator.utils.MathHelper.sum;
 
 public class Calculator {
 

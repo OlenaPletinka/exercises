@@ -1,4 +1,4 @@
-package com.epam.exercises.module1.calculator2;
+package com.epam.exercises.module1.calculator_exercise.calculator.calculator2;
 
 import org.junit.Assert;
 import org.junit.Test;
