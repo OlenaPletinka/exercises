@@ -12,7 +12,7 @@ public class InputHelper {
 
    private static final String REGEX_FOR_CALCULATOR = "^[\\d\\+\\/\\*\\.\\- \\(\\)]*$";
 
-   public static String getExpression() throws InvalidInputException {
+   public static String getExpression() {
 
       System.out.println("Enter an expression: ");
 
@@ -51,7 +51,7 @@ public class InputHelper {
       try {
          return Arrays.stream(numbers).mapToInt(Integer::parseInt).toArray();
       } catch (NumberFormatException e){
-         throw new FormatNumberException("Please enter correct number format!");
+         throw new FormatNumberException("Please enter correct number format!", e);
       }
    }
 

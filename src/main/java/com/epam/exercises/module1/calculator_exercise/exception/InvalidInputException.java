@@ -1,8 +1,6 @@
 package com.epam.exercises.module1.calculator_exercise.exception;
 
-import java.io.IOException;
-
-public class InvalidInputException extends IOException {
+public class InvalidInputException extends RuntimeException {
 
    public InvalidInputException(String message) {
       super(message);

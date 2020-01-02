@@ -4,9 +4,9 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
 
-class Calculator {
+public class Calculator {
 
-   Object calculate(String expression) {
+   public Object calculate(String expression) {
 
       ScriptEngineManager manager = new ScriptEngineManager();
       ScriptEngine se = manager.getEngineByName("JavaScript");

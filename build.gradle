@@ -23,5 +23,11 @@ dependencies {
     testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.7.4'
     // https://mvnrepository.com/artifact/com.google.guava/guava
     compile group: 'com.google.guava', name: 'guava', version: '21.0'
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+
+
+
+
 
 }
