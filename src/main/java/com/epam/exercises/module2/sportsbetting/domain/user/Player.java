@@ -6,7 +6,8 @@ import java.time.LocalDate;
 import lombok.Data;
 
 @Data
-public class Player extends User{
+public class Player extends User {
+
    private String name;
    private String accountNumber;
    private BigDecimal balance;

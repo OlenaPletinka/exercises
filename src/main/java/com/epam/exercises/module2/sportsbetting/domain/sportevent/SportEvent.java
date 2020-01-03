@@ -7,10 +7,10 @@ import lombok.Data;
 
 @Data
 public abstract class SportEvent {
+
    private Result result;
    private List<Bet> bets;
    private String title;
    private LocalDate startDate;
    private LocalDate endDate;
-
 }

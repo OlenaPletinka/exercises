@@ -2,12 +2,15 @@ package com.epam.exercises.module2.sportsbetting.domain.outcome;
 
 import java.util.ArrayList;
 import java.util.List;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class Outcome {
+
    private List<OutcomeOdd> outcomeOdds = new ArrayList<>();
-   private String outcomeValue ;
+   private String outcomeValue;
 
 
    public void addOutcomeOdd(OutcomeOdd outcomeOddForFirstOutcome) {

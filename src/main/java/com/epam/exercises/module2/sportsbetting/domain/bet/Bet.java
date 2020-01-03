@@ -9,6 +9,7 @@ import lombok.Data;
 
 @Data
 public class Bet {
+
    private SportEvent sportEvent;
    private List<Outcome> outcomes = new ArrayList<>();
    private String description;

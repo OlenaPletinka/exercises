@@ -4,10 +4,9 @@ import com.epam.exercises.module2.sportsbetting.domain.outcome.OutcomeOdd;
 import com.epam.exercises.module2.sportsbetting.domain.user.Player;
 import com.epam.exercises.module2.sportsbetting.enums.Currency;
 import java.math.BigDecimal;
-import lombok.Data;
 
-@Data
-public class Wager {
+public class WagerBuilder {
+
    private OutcomeOdd outcomeOdd;
    private Player player;
    private BigDecimal amount;
@@ -16,14 +15,42 @@ public class Wager {
    private boolean isProcessed;
    private boolean isWin;
 
-   public Wager(OutcomeOdd outcomeOdd, Player player, BigDecimal amount, Currency currency,
-       Integer timestamp, boolean isProcessed, boolean isWin) {
+   public WagerBuilder setOutcomeOdd(OutcomeOdd outcomeOdd) {
       this.outcomeOdd = outcomeOdd;
+      return this;
+   }
+
+   public WagerBuilder setPlayer(Player player) {
       this.player = player;
+      return this;
+   }
+
+   public WagerBuilder setAmount(BigDecimal amount) {
       this.amount = amount;
+      return this;
+   }
+
+   public WagerBuilder setCurrency(Currency currency) {
       this.currency = currency;
+      return this;
+   }
+
+   public WagerBuilder setTimestamp(Integer timestamp) {
       this.timestamp = timestamp;
+      return this;
+   }
+
+   public WagerBuilder setIsProcessed(boolean isProcessed) {
       this.isProcessed = isProcessed;
+      return this;
+   }
+
+   public WagerBuilder setIsWin(boolean isWin) {
       this.isWin = isWin;
+      return this;
+   }
+
+   public Wager createWager() {
+      return new Wager(outcomeOdd, player, amount, currency, timestamp, isProcessed, isWin);
    }
 }
