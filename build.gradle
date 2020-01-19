@@ -25,9 +25,6 @@ dependencies {
     compile group: 'com.google.guava', name: 'guava', version: '21.0'
     compileOnly 'org.projectlombok:lombok:1.18.8'
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
-
-
-
-
-
+    classpath 'org.apache.logging.log4j:log4j-jul:2.10.0'
+    classpath 'org.slf4j:log4j-over-slf4j:1.7.25'
 }
